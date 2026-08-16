@@ -80,13 +80,15 @@
     display:inline-block;font-family:var(--font-display);font-weight:900;font-size:14px;
     background:var(--cream);color:var(--cream-ink);padding:7px 20px;border-radius:999px;margin-bottom:18px;
   }
-  .hero h1{font-size:clamp(28px,5.4vw,46px);font-weight:900;letter-spacing:.01em;}
+  .hero h1{font-size:clamp(25px,5vw,44px);font-weight:900;letter-spacing:.01em;}
   .hero h1 .mk{
     display:inline-block;position:relative;padding:0 .18em;
     background:linear-gradient(transparent 62%, #FFE08A 62%);
   }
   .hero h1 .aqua{color:var(--aqua-ink);}
   .hero .h1sub{font-family:var(--font-display);font-weight:700;font-size:clamp(14px,2.5vw,17px);color:var(--ink-soft);margin-top:14px;}
+  /* 語の途中で折り返させたくない塊 */
+  .nb{white-space:nowrap;}
 
   /* ぷっくり囲みバッジ */
   .puffy-row{display:flex;flex-wrap:wrap;justify-content:center;gap:12px;margin:22px 0 6px;}
@@ -249,6 +251,8 @@
     .tl-body::before{left:-23px;}
     .btn-black{min-width:0;width:100%;}
     .brand .sub{display:none;}
+    /* 2行に折り返しても不格好にならないよう角丸長方形に */
+    .hero-eyebrow{font-size:12.5px;padding:8px 16px;border-radius:14px;line-height:1.6;}
   }
   @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto;}}
 </style>
@@ -274,9 +278,9 @@
 <section class="hero">
   <div class="wrap">
     <div class="hero-card">
-      <span class="hero-eyebrow">🌅 親子でたのしむ 食育見学会</span>
-      <h1>学校がお休みの日に、<br><span class="aqua">朝8時の</span><span class="mk">市場</span><span class="aqua">へ。</span></h1>
-      <p class="h1sub">川崎市中央卸売市場 北部市場 親子見学会</p>
+      <span class="hero-eyebrow">🗓️ かわさきホリデー＆スタディ（ホリスタ）特別企画！</span>
+      <h1>まちのごはんが<span class="mk">動き出す朝</span>を、<br><span class="aqua">いっしょに<span class="nb">見にいきませんか。</span></span></h1>
+      <p class="h1sub"><span class="nb">親子でたのしむ食育見学会</span>｜<span class="nb">川崎市中央卸売市場 北部市場</span></p>
 
       <div class="puffy-row">
         <span class="puffy">水産・青果・関連の3棟</span>
@@ -583,7 +587,7 @@
 <!-- ===== 最終CTA ===== -->
 <section class="section final" id="apply">
   <div class="wrap">
-    <h2>まちのごはんが動き出す朝を、<br>いっしょに見にいきませんか。</h2>
+    <h2>学校がお休みの日に、<br>朝8時の市場へ。</h2>
     <p>宮前区・多摩区・麻生区のPTA会員のご家庭／参加無料／親子10組（応募多数の場合は抽選）<br><strong>申込締切：2026年9月25日（金）</strong></p>
     <!-- 【要差し替え】Googleフォームの公開URL（https://forms.gle/～） -->
     <p><a href="#" class="btn-black btn-orange">お申し込みフォーム <span class="cv">▶</span></a></p>

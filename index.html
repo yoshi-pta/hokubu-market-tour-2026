@@ -120,6 +120,8 @@
   .holista .hl-ic{font-size:22px;line-height:1.5;flex:0 0 auto;}
   .holista .hl-t{font-family:var(--font-display);font-weight:900;font-size:15.5px;margin-bottom:2px;}
   .holista .hl-d{font-size:13.5px;color:var(--ink-soft);line-height:1.8;}
+  /* 語の途中で折り返させたくない塊 */
+  .nb{white-space:nowrap;}
 
   .fact-row{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:28px;}
   .fact{background:#fff;border-radius:var(--radius-md);padding:14px 18px;box-shadow:var(--shadow-card);min-width:118px;}
@@ -260,6 +262,8 @@
 
   /* ====== レスポンシブ ====== */
   @media(max-width:520px){
+    /* 2行に折り返しても不格好にならないよう角丸長方形に */
+    .eyebrow{font-size:12px;padding:8px 14px;border-radius:14px;line-height:1.6;}
     .brand{font-size:12.5px;gap:8px;}
     .brand .mark{width:32px;height:32px;font-size:16px;border-radius:10px;}
     .brand .btxt .sub{font-size:10px;}
@@ -305,7 +309,7 @@
   <div class="wrap">
     <div class="hero-grid">
       <div class="hero-copy reveal">
-        <span class="eyebrow">🌅 親子でたのしむ 食育見学会</span>
+        <span class="eyebrow">🗓️ かわさきホリデー＆スタディ（ホリスタ）特別企画！</span>
         <h1>朝8時の市場は、<br><span class="accent">いちばん生きている。</span></h1>
         <p class="sub">川崎市中央卸売市場 北部市場 親子見学会<br><span class="sub-line">水産・青果・関連の3棟をあるく。</span><span class="sub-line">食品衛生検査所で「食のあんぜん」を知る。</span></p>
         <p class="lead">スーパーに並ぶ前の魚と野菜は、どこにいるのだろう。答えは、まちのすぐとなりにあります。プロの買い出し人が行き交う朝の市場を、親子で歩いてみませんか。9時をすぎると店じまいがはじまるので、集合は朝8時です。</p>
@@ -313,7 +317,7 @@
         <div class="holista">
           <span class="hl-ic">🗓️</span>
           <div>
-            <div class="hl-t">10月13日は「ホリスタ」。学校がお休みの日です。</div>
+            <div class="hl-t"><span class="nb">10月13日は「ホリスタ」。</span><span class="nb">学校がお休みの日です。</span></div>
             <div class="hl-d">川崎市立の小中学校が一斉にお休みになる体験的学習活動等休業日「かわさきホリデー＆スタディ」。学校を休まずに参加できる、貴重な平日です。</div>
           </div>
         </div>
