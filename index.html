@@ -50,9 +50,12 @@
     line-height:1.9;
     -webkit-font-smoothing:antialiased;
     overflow-x:hidden;
+    /* 日本語を文節単位で折り返す（読点や語の途中で切れるのを防ぐ） */
+    word-break:auto-phrase;
+    line-break:strict;
   }
-  h1,h2,h3{font-family:var(--font-display);line-height:1.4;margin:0;}
-  p{margin:0;}
+  h1,h2,h3{font-family:var(--font-display);line-height:1.4;margin:0;text-wrap:balance;}
+  p{margin:0;text-wrap:pretty;}
   a{color:inherit;}
   img{max-width:100%;}
 
@@ -104,8 +107,19 @@
   .hero h1{font-size:clamp(30px,5vw,50px);font-weight:900;margin:16px 0 10px;letter-spacing:.01em;}
   .hero h1 .accent{color:var(--dawn-deep);}
   .hero .sub{font-family:var(--font-display);font-weight:700;font-size:clamp(15px,2.4vw,19px);color:var(--ink-soft);margin-bottom:20px;}
-  .hero .sub .sub-line{display:inline-block;margin-top:8px;font-size:clamp(13px,1.9vw,15.5px);font-weight:500;color:var(--sea-deep);}
+  .hero .sub .sub-line{display:block;margin-top:6px;font-size:clamp(13px,1.9vw,15.5px);font-weight:500;color:var(--sea-deep);}
   .hero .lead{font-size:16px;color:var(--ink-soft);max-width:31em;margin-bottom:26px;}
+
+  /* ホリスタ（学校一斉休業日）の告知 */
+  .holista{
+    display:flex;gap:14px;align-items:flex-start;
+    background:#fff;border-left:5px solid var(--sun);
+    border-radius:14px;padding:16px 20px;margin:0 0 24px;
+    box-shadow:var(--shadow-card);max-width:33em;
+  }
+  .holista .hl-ic{font-size:22px;line-height:1.5;flex:0 0 auto;}
+  .holista .hl-t{font-family:var(--font-display);font-weight:900;font-size:15.5px;margin-bottom:2px;}
+  .holista .hl-d{font-size:13.5px;color:var(--ink-soft);line-height:1.8;}
 
   .fact-row{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:28px;}
   .fact{background:#fff;border-radius:var(--radius-md);padding:14px 18px;box-shadow:var(--shadow-card);min-width:118px;}
@@ -293,8 +307,16 @@
       <div class="hero-copy reveal">
         <span class="eyebrow">🌅 親子でたのしむ 食育見学会</span>
         <h1>朝8時の市場は、<br><span class="accent">いちばん生きている。</span></h1>
-        <p class="sub">川崎市中央卸売市場 北部市場 親子見学会<br><span class="sub-line">水産・青果・関連の3棟をあるく／食品衛生検査所で「食のあんぜん」を知る</span></p>
-        <p class="lead">スーパーに並ぶ前の魚と野菜は、どこにいるのだろう。答えは、まちのすぐとなりにあります。プロの買い出し人が行き交う朝の市場を、親子で歩いてみませんか。9時をすぎると店じまいがはじまる——だからこの見学会は、朝8時集合です。</p>
+        <p class="sub">川崎市中央卸売市場 北部市場 親子見学会<br><span class="sub-line">水産・青果・関連の3棟をあるく。</span><span class="sub-line">食品衛生検査所で「食のあんぜん」を知る。</span></p>
+        <p class="lead">スーパーに並ぶ前の魚と野菜は、どこにいるのだろう。答えは、まちのすぐとなりにあります。プロの買い出し人が行き交う朝の市場を、親子で歩いてみませんか。9時をすぎると店じまいがはじまるので、集合は朝8時です。</p>
+
+        <div class="holista">
+          <span class="hl-ic">🗓️</span>
+          <div>
+            <div class="hl-t">10月13日は「ホリスタ」。学校がお休みの日です。</div>
+            <div class="hl-d">川崎市立の小中学校が一斉にお休みになる体験的学習活動等休業日「かわさきホリデー＆スタディ」。学校を休まずに参加できる、貴重な平日です。</div>
+          </div>
+        </div>
 
         <div class="fact-row">
           <div class="fact"><div class="k">日にち</div><div class="v">10/13<small>（火）</small></div></div>
@@ -486,7 +508,7 @@
       <h2 class="h2 reveal">開催概要</h2>
     </div>
     <div class="info-card reveal">
-      <div class="info-row"><div class="label">📅 日時</div><div class="value"><strong>2026年10月13日（火）8:00〜10:05</strong><br><small style="color:var(--ink-soft);">集合：8:00／管理事務所棟1階ロビー</small></div></div>
+      <div class="info-row"><div class="label">📅 日時</div><div class="value"><strong>2026年10月13日（火）8:00〜10:05</strong><br><small style="color:var(--ink-soft);">集合：8:00／管理事務所棟1階ロビー<br>この日は川崎市立小中学校の一斉休業日「ホリスタ」です</small></div></div>
       <div class="info-row"><div class="label">📍 会場</div><div class="value">川崎市中央卸売市場 北部市場<br><small style="color:var(--ink-soft);">川崎市宮前区水沢1-1-1</small></div></div>
       <div class="info-row"><div class="label">👨‍👩‍👧 対象</div><div class="value">宮前区・多摩区・麻生区のPTA会員のご家庭<br><small style="color:var(--ink-soft);">お子さん（小学生）と保護者のペアでご参加ください</small></div></div>
       <div class="info-row"><div class="label">🎫 定員</div><div class="value"><strong>親子10組</strong><br><small style="color:var(--ink-soft);">応募多数の場合は抽選とさせていただきます。</small></div></div>
@@ -577,11 +599,11 @@
       </details>
       <details class="faq-item reveal">
         <summary><span class="q">Q.</span>朝8時集合ですが、学校はどうなりますか？</summary>
-        <div class="a"><!-- 【要確定】10/13の川崎市立小中学校の授業予定にあわせて記載を確定してください -->10月13日（火）の予定については、お申し込み前に各学校の予定表をご確認ください。ご不明な場合は、お申し込み時にご相談ください。</div>
+        <div class="a">10月13日（火）は、川崎市立の小中学校が一斉にお休みになる日（体験的学習活動等休業日「かわさきホリデー＆スタディ」＝通称ホリスタ）です。学校をお休みして参加していただく必要はありません。</div>
       </details>
       <details class="faq-item reveal">
         <summary><span class="q">Q.</span>その場で買い物はできますか？</summary>
-        <div class="a">見学プログラム中のお買い物は行いません。北部市場は、平日は飲食店や小売店などプロの買い出し人の方に向けて営業しています。</div>
+        <div class="a">見学プログラム中はお買い物の時間を設けていませんが、<strong>見学の前後であればお買い物いただけます</strong>。北部市場は平日、飲食店や小売店などプロの買い出し人の方に向けて営業していますが、一般の方でも買い出しの落ち着く8時ごろからは見て回りやすい時間帯です。ただし8時半をすぎると店じまいをはじめるお店が増えますので、お買い物をご希望の方は<strong>集合前の時間に少し早めにお越しいただく</strong>のがおすすめです。営業時間はお店によって異なります。</div>
       </details>
       <details class="faq-item reveal">
         <summary><span class="q">Q.</span>雨のときはどうなりますか？</summary>
