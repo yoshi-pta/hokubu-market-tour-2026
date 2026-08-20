@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- 募集開始まで検索避け。正式公開時にこの1行を削除してください -->
+<meta name="robots" content="noindex,nofollow">
+<title>10/13は学校がお休み。親子で市場へ。｜川崎市中央卸売市場北部市場 親子見学会</title>
+<meta name="description" content="2026年10月13日(火)は川崎市立小中学校の一斉休業日「ホリスタ」。朝8時開始・10時頃終了。北部市場で、水産・青果・関連の3棟を歩き、食品衛生検査所で食のあんぜんを学ぶ親子見学会。宮前区・多摩区・麻生区のPTA会員のご家庭／親子10組／参加無料。">
+<meta property="og:title" content="10/13は学校がお休み。親子で市場へ。｜北部市場 親子見学会">
+<meta property="og:description" content="2026/10/13(火) 8:00開始・10:00頃終了｜川崎市中央卸売市場北部市場｜親子10組・参加無料">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500;700;900&family=Zen+Kaku+Gothic+New:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+  :root{
+    /* ---- 面で塗り分けるパステル ---- */
+    --mint:      #E4F2E7;   /* 青果の面 */
+    --mint-ink:  #3F8C55;
+    --aqua:      #E2EFF6;   /* 水産の面 */
+    --aqua-ink:  #1F6F8B;
+    --cream:     #FFF3DF;   /* 朝の面 */
+    --cream-ink: #E2670F;
+    --peach:     #FDECE2;   /* 関連商品の面 */
+    --peach-ink: #C4562A;
+
+    --ink:       #2B2B2B;
+    --ink-soft:  #666060;
+    --line:      #E7E0D5;
+    --white:     #FFFFFF;
+    --black-btn: #23282B;
+
+    --maxw: 960px;
+    --font-display: "Zen Maru Gothic", sans-serif;
+    --font-text: "Zen Kaku Gothic New", sans-serif;
+    --shadow: 0 10px 24px -14px rgba(43,43,43,.4);
+  }
+
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    font-family:var(--font-text);
+    color:var(--ink);
+    background:var(--white);
+    line-height:1.85;
+    -webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+    /* 日本語を文節で折り返す */
+    word-break:auto-phrase;
+    line-break:strict;
+  }
+  h1,h2,h3,h4{font-family:var(--font-display);line-height:1.45;margin:0;text-wrap:balance;}
+  p{margin:0;text-wrap:pretty;}
+  a{color:inherit;}
+  img{max-width:100%;}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 20px;}
+  .section{padding:64px 0;}
+
+  /* ====== 告知バー ====== */
+  .topbar{background:var(--black-btn);color:#fff;text-align:center;font-size:13px;padding:9px 16px;font-family:var(--font-display);font-weight:700;}
+  .topbar b{color:#FFD466;}
+
+  /* ====== ヘッダー ====== */
+  header.nav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--line);}
+  .nav-inner{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:10px 20px;max-width:var(--maxw);margin:0 auto;}
+  .brand{display:flex;align-items:center;gap:9px;font-family:var(--font-display);font-weight:900;font-size:15px;line-height:1.25;}
+  .brand .mark{width:36px;height:36px;border-radius:10px;flex:0 0 auto;background:var(--aqua-ink);color:#fff;display:flex;align-items:center;justify-content:center;font-size:18px;}
+  .brand .sub{display:block;font-size:10.5px;font-weight:500;color:var(--ink-soft);}
+  .nav-cta{font-family:var(--font-display);font-weight:900;font-size:13.5px;background:var(--cream-ink);color:#fff;text-decoration:none;padding:10px 18px;border-radius:999px;white-space:nowrap;}
+
+  /* ====== ヒーロー ====== */
+  .hero{background:var(--aqua);padding:34px 0 40px;}
+  .hero-card{
+    background:#fff;border-radius:26px;padding:34px 30px 30px;text-align:center;
+    box-shadow:var(--shadow);position:relative;overflow:hidden;
+  }
+  .hero-eyebrow{
+    display:inline-block;font-family:var(--font-display);font-weight:900;font-size:14px;
+    background:var(--cream);color:var(--cream-ink);padding:7px 20px;border-radius:999px;margin-bottom:18px;
+  }
+  .hero h1{font-size:clamp(25px,5vw,44px);font-weight:900;letter-spacing:.01em;}
+  .hero h1 .mk{
+    display:inline-block;position:relative;padding:0 .18em;
+    background:linear-gradient(transparent 62%, #FFE08A 62%);
+  }
+  .hero h1 .aqua{color:var(--aqua-ink);}
+  .hero .h1sub{font-family:var(--font-display);font-weight:700;font-size:clamp(14px,2.5vw,17px);color:var(--ink-soft);margin-top:14px;}
+  /* 語の途中で折り返させたくない塊 */
+  .nb{white-space:nowrap;}
+
+  /* ぷっくり囲みバッジ */
+  .puffy-row{display:flex;flex-wrap:wrap;justify-content:center;gap:12px;margin:22px 0 6px;}
+  .puffy{
+    font-family:var(--font-display);font-weight:900;font-size:15px;
+    border:3px solid var(--aqua-ink);color:var(--aqua-ink);background:#fff;
+    padding:9px 22px;border-radius:999px;
+  }
+  .puffy.b2{border-color:var(--mint-ink);color:var(--mint-ink);}
+  .puffy.b3{border-color:var(--cream-ink);color:var(--cream-ink);}
+
+  /* 日時の大きな表示 */
+  .bigdate{margin-top:24px;display:inline-flex;flex-wrap:wrap;align-items:baseline;justify-content:center;gap:10px;font-family:var(--font-display);}
+  .bigdate .d{font-size:clamp(34px,7vw,56px);font-weight:900;line-height:1;color:var(--cream-ink);}
+  .bigdate .w{font-size:17px;font-weight:900;color:var(--cream-ink);}
+  .bigdate .t{font-size:clamp(17px,3.4vw,22px);font-weight:900;}
+  .time-note{font-family:var(--font-display);font-weight:900;font-size:clamp(17px,3.4vw,23px);margin-top:4px;}
+  .time-note .tn-sub{font-size:.75em;font-weight:700;color:var(--ink-soft);}
+  .hero-note{font-size:13px;color:var(--ink-soft);margin-top:12px;}
+
+
+  /* ====== イラスト ====== */
+  .hero-illust{display:block;width:calc(100% + 60px);margin:-34px -30px 20px;}
+  .card-illust{display:block;width:92px;height:92px;margin:0 auto 2px;}
+  .tp-in{display:flex;gap:22px;align-items:flex-start;}
+  .tab-illust{flex:0 0 auto;width:132px;height:99px;}
+  .num-card{position:relative;overflow:hidden;}
+  .num-illust{position:absolute;right:-6px;bottom:-6px;width:74px;height:74px;opacity:.28;}
+  @media(max-width:760px){
+    .hero-illust{width:calc(100% + 40px);margin:-28px -20px 18px;}
+    .tp-in{flex-direction:column;align-items:center;text-align:center;}
+    .tab-illust{width:160px;height:120px;}
+  }
+
+  /* ====== 黒ボタン ====== */
+  .btn-black{
+    display:inline-flex;align-items:center;justify-content:space-between;gap:14px;
+    font-family:var(--font-display);font-weight:900;font-size:16px;
+    background:var(--black-btn);color:#fff;text-decoration:none;
+    padding:16px 26px;border-radius:10px;min-width:280px;
+  }
+  .btn-black .cv{font-size:13px;}
+  .btn-orange{background:var(--cream-ink);}
+
+  /* ====== アンカーボタン列 ====== */
+  .anchors{background:var(--aqua);padding:0 0 34px;}
+  .anchor-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;}
+  .anchor{
+    background:#fff;border-radius:12px;padding:14px 10px;text-align:center;text-decoration:none;
+    font-family:var(--font-display);font-weight:900;font-size:14px;box-shadow:var(--shadow);
+    display:block;
+  }
+  .anchor .ar{display:block;font-size:11px;color:var(--aqua-ink);margin-top:2px;}
+
+  /* ====== ホリスタ帯 ====== */
+  .holista{background:#FFE9A8;padding:26px 0;}
+  .holista-in{display:flex;gap:18px;align-items:center;justify-content:center;flex-wrap:wrap;text-align:center;}
+  .holista .hl-badge{
+    font-family:var(--font-display);font-weight:900;font-size:15px;background:var(--black-btn);color:#FFD466;
+    padding:8px 18px;border-radius:999px;white-space:nowrap;
+  }
+  .holista .hl-txt{font-family:var(--font-display);font-weight:900;font-size:clamp(16px,3vw,21px);}
+  .holista .hl-sub{font-size:13.5px;color:#6B5A18;max-width:36em;margin:8px auto 0;}
+
+  /* ====== セクション見出し（ピル帯） ====== */
+  .sec-head{text-align:center;margin-bottom:30px;}
+  .pill{
+    display:inline-block;font-family:var(--font-display);font-weight:900;font-size:15px;
+    color:#fff;padding:8px 30px;border-radius:999px;margin-bottom:14px;
+  }
+  .pill.aqua{background:var(--aqua-ink);}
+  .pill.mint{background:var(--mint-ink);}
+  .pill.cream{background:var(--cream-ink);}
+  .sec-head h2{font-size:clamp(22px,4.2vw,31px);font-weight:900;}
+  .sec-head p{color:var(--ink-soft);font-size:15px;margin-top:10px;max-width:34em;margin-left:auto;margin-right:auto;}
+
+  /* ====== できること3枚 ====== */
+  .bg-mint{background:var(--mint);}
+  .bg-cream{background:var(--cream);}
+  .bg-peach{background:var(--peach);}
+  .cards3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;}
+  .card{background:#fff;border-radius:18px;padding:26px 22px;text-align:center;box-shadow:var(--shadow);}
+  .card .ico{font-size:38px;line-height:1.2;}
+  .card h3{font-size:17.5px;font-weight:900;margin:10px 0 8px;}
+  .card p{font-size:14px;color:var(--ink-soft);}
+
+  /* ====== タブ（3つの棟） ====== */
+  .tabs{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;max-width:640px;margin:0 auto;}
+  .tab{
+    font-family:var(--font-display);font-weight:900;font-size:15px;
+    background:#EDE7DC;color:#8A8177;border:none;cursor:pointer;
+    padding:13px 8px;border-radius:12px 12px 0 0;transition:background .2s,color .2s;
+  }
+  .tab[aria-selected="true"]{background:var(--aqua-ink);color:#fff;}
+  .tabpanels{background:#fff;border-radius:0 0 18px 18px;box-shadow:var(--shadow);padding:28px 26px;max-width:640px;margin:0 auto;}
+  .tabpanel[hidden]{display:none;}
+  .tabpanel h3{font-size:19px;font-weight:900;margin-bottom:8px;}
+  .tabpanel p{font-size:14.5px;color:var(--ink-soft);}
+  .tabpanel .tag{display:inline-block;font-family:var(--font-display);font-weight:700;font-size:12.5px;background:var(--aqua);color:var(--aqua-ink);padding:3px 12px;border-radius:999px;margin-bottom:10px;}
+
+  /* ====== 数字カード（市場のひみつ） ====== */
+  .nums{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;}
+  .num-card{background:#fff;border-radius:18px;padding:26px 20px;text-align:center;box-shadow:var(--shadow);}
+  .num-card .n{font-family:var(--font-display);font-weight:900;font-size:52px;line-height:1;color:var(--cream-ink);}
+  .num-card .n small{font-size:20px;}
+  .num-card h3{font-size:16px;font-weight:900;margin:10px 0 8px;}
+  .num-card p{font-size:13.5px;color:var(--ink-soft);}
+
+  /* ====== 当日の流れ（縦タイムライン） ====== */
+  .tl{max-width:680px;margin:0 auto;position:relative;}
+  .tl::before{content:"";position:absolute;left:64px;top:16px;bottom:16px;width:3px;background:var(--line);}
+  .tl-item{display:grid;grid-template-columns:56px 1fr;gap:20px;align-items:flex-start;position:relative;margin-bottom:16px;}
+  .tl-time{font-family:var(--font-display);font-weight:900;font-size:14px;color:var(--aqua-ink);text-align:right;padding-top:16px;line-height:1.4;}
+  .tl-body{background:#fff;border-radius:14px;padding:18px 20px;box-shadow:var(--shadow);position:relative;}
+  .tl-body::before{
+    content:"";position:absolute;left:-27px;top:22px;width:14px;height:14px;border-radius:50%;
+    background:var(--aqua-ink);border:3px solid #fff;
+  }
+  .tl-body h3{font-size:16.5px;font-weight:900;margin-bottom:4px;}
+  .tl-body p{font-size:14px;color:var(--ink-soft);}
+
+  /* ====== 概要テーブル ====== */
+  .info{background:#fff;border-radius:18px;box-shadow:var(--shadow);overflow:hidden;max-width:720px;margin:0 auto;}
+  .info-row{display:grid;grid-template-columns:130px 1fr;gap:10px;padding:16px 24px;border-bottom:1px solid var(--line);}
+  .info-row:last-child{border-bottom:none;}
+  .info-row .lb{font-family:var(--font-display);font-weight:900;font-size:13.5px;color:var(--aqua-ink);}
+  .info-row .vl{font-size:15px;}
+  .info-row .vl strong{font-family:var(--font-display);font-weight:900;font-size:17px;}
+  .free{display:inline-block;background:var(--mint-ink);color:#fff;font-family:var(--font-display);font-weight:900;padding:2px 14px;border-radius:999px;font-size:15px;}
+
+  /* ====== アクセス ====== */
+  .bus{display:grid;gap:10px;max-width:720px;margin:0 auto;}
+  .bus li{list-style:none;background:#fff;border-radius:12px;padding:13px 18px;font-size:14.5px;box-shadow:var(--shadow);}
+  .bus li b{font-family:var(--font-display);font-weight:900;color:var(--aqua-ink);}
+  .bus li .stop{display:inline-block;background:var(--cream);color:var(--cream-ink);border-radius:999px;padding:1px 11px;font-size:12.5px;font-weight:700;margin-left:4px;}
+  .map-ph{max-width:720px;margin:0 auto 18px;background:#fff;border-radius:18px;box-shadow:var(--shadow);aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:6px;color:var(--ink-soft);font-family:var(--font-display);font-weight:700;text-align:center;padding:20px;overflow:hidden;}
+  .map-ph img{width:100%;height:100%;object-fit:contain;}
+  .carnote{max-width:720px;margin:16px auto 0;background:#fff;border:2px solid #F3C9A8;border-radius:14px;padding:16px 20px;font-size:14.5px;}
+  .carnote b{font-family:var(--font-display);color:var(--cream-ink);}
+
+  /* ====== おねがい ====== */
+  .rules{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;max-width:800px;margin:0 auto;}
+  .rule{display:flex;gap:13px;background:#fff;border-radius:14px;padding:16px 18px;box-shadow:var(--shadow);}
+  .rule .ic{width:34px;height:34px;border-radius:50%;flex:0 0 auto;background:var(--aqua-ink);color:#fff;display:flex;align-items:center;justify-content:center;font-size:16px;}
+  .rule h3{font-size:15px;font-weight:900;}
+  .rule p{font-size:13.5px;color:var(--ink-soft);}
+
+  /* ====== FAQ ====== */
+  .faq{max-width:720px;margin:0 auto;display:grid;gap:10px;}
+  .faq details{background:#fff;border-radius:12px;box-shadow:var(--shadow);overflow:hidden;}
+  .faq summary{font-family:var(--font-display);font-weight:900;font-size:15.5px;padding:16px 20px;cursor:pointer;list-style:none;display:flex;gap:10px;}
+  .faq summary::-webkit-details-marker{display:none;}
+  .faq summary .q{color:var(--cream-ink);}
+  .faq .a{padding:0 20px 18px;font-size:14.5px;color:var(--ink-soft);}
+
+  /* ====== 最終CTA ====== */
+  .final{background:var(--cream);text-align:center;}
+  .final h2{font-size:clamp(22px,4.4vw,33px);font-weight:900;margin-bottom:12px;}
+  .final p{color:var(--ink-soft);max-width:32em;margin:0 auto 24px;font-size:15px;}
+
+  /* ====== フッター ====== */
+  footer{background:var(--black-btn);color:#DCD8D2;padding:34px 0 30px;font-size:13px;}
+  footer .fb{font-family:var(--font-display);font-weight:900;color:#fff;font-size:15px;margin-bottom:8px;}
+  footer .fo{opacity:.72;margin-top:14px;line-height:1.9;}
+
+  /* ====== レスポンシブ ====== */
+  @media(max-width:760px){
+    .cards3,.nums,.rules{grid-template-columns:1fr;}
+    .anchor-grid{grid-template-columns:1fr;}
+    .section{padding:52px 0;}
+    .hero-card{padding:28px 20px 26px;border-radius:22px;}
+    .info-row{grid-template-columns:1fr;gap:2px;padding:14px 18px;}
+    .tl::before{left:46px;}
+    .tl-item{grid-template-columns:40px 1fr;gap:16px;}
+    .tl-time{font-size:12.5px;padding-top:15px;}
+    .tl-body::before{left:-23px;}
+    .btn-black{min-width:0;width:100%;}
+    .brand .sub{display:none;}
+    /* 2行に折り返しても不格好にならないよう角丸長方形に */
+    .hero-eyebrow{font-size:12.5px;padding:8px 16px;border-radius:14px;line-height:1.6;}
+  }
+  @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto;}}
+</style>
+</head>
+<body>
+
+<div class="topbar">📣 ただいま申込受付中｜申込締切 <b>2026年9月25日（金）</b>｜親子10組・参加無料</div>
+
+<header class="nav">
+  <div class="nav-inner">
+    <div class="brand">
+      <span class="mark">🐟</span>
+      <span>北部市場 親子見学会
+        <span class="sub">宮前区・多摩区・麻生区PTA協議会／川崎市PTA連絡協議会</span>
+      </span>
+    </div>
+    <!-- 【要差し替え】Googleフォームの公開URL -->
+    <a href="#apply" class="nav-cta">お申し込み</a>
+  </div>
+</header>
+
+<!-- ===== ヒーロー ===== -->
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-card">
+      <svg class="hero-illust" viewBox="0 0 800 200" role="img" aria-label="夜明けの市場のイラスト。朝日、市場の建物、ターレー、魚の箱、野菜、見学する親子">
+        <rect width="800" height="200" fill="#FFF3DF"/>
+        <circle cx="676" cy="40" r="30" fill="#F7C948"/><circle cx="676" cy="40" r="47" fill="#F7C948" opacity=".26"/>
+        <rect x="40" y="58" width="46" height="46" rx="5" fill="#BFDFEB"/>
+        <rect x="94" y="72" width="34" height="32" rx="5" fill="#D2E9F1"/>
+        <rect x="712" y="66" width="46" height="38" rx="5" fill="#D2E9F1"/>
+        <!-- 市場の建物（奥） -->
+        <path d="M196 66 Q400 8 604 66 L604 74 L196 74 Z" fill="#1F6F8B"/>
+        <rect x="196" y="74" width="408" height="30" fill="#7FB4C7"/>
+        <g fill="#5E9DB2"><rect x="264" y="74" width="7" height="30"/><rect x="366" y="74" width="7" height="30"/><rect x="468" y="74" width="7" height="30"/><rect x="556" y="74" width="7" height="30"/></g>
+        <!-- 地面 -->
+        <rect y="104" width="800" height="96" fill="#EFE3CE"/>
+        <!-- ターレー -->
+        <g transform="translate(60,112)">
+          <rect x="0" y="18" width="86" height="28" rx="5" fill="#EE6C1B"/>
+          <circle cx="14" cy="24" r="15" fill="#EE6C1B"/><rect x="6" y="0" width="11" height="24" rx="4" fill="#EE6C1B"/>
+          <rect x="34" y="6" width="44" height="14" rx="3" fill="#F7C948"/>
+          <circle cx="16" cy="52" r="9" fill="#22323C"/><circle cx="72" cy="52" r="9" fill="#22323C"/>
+        </g>
+        <!-- 発泡箱と魚 -->
+        <g transform="translate(246,118)">
+          <rect x="0" y="14" width="98" height="38" rx="5" fill="#FFFFFF"/><rect x="0" y="6" width="98" height="13" rx="4" fill="#E7EEF1"/>
+          <g transform="translate(12,-10)"><path d="M0 12 Q16 -4 42 12 Q16 28 0 12 Z" fill="#1F6F8B"/><path d="M42 12 L55 4 L55 20 Z" fill="#14556E"/><circle cx="13" cy="9" r="2.6" fill="#fff"/></g>
+          <g transform="translate(50,3)"><path d="M0 10 Q13 -2 34 10 Q13 22 0 10 Z" fill="#4F97AF"/><path d="M34 10 L44 4 L44 16 Z" fill="#2A7E9B"/><circle cx="10" cy="8" r="2" fill="#fff"/></g>
+        </g>
+        <!-- 青果のかご -->
+        <g transform="translate(392,116)">
+          <path d="M14 8 L19 38 L24 8 Z" fill="#EE6C1B"/><path d="M17 3 L19 9 L22 3" stroke="#6FA84B" stroke-width="3" fill="none" stroke-linecap="round"/>
+          <circle cx="45" cy="25" r="15" fill="#6FA84B"/><circle cx="45" cy="25" r="9" fill="#8CC46A"/>
+          <circle cx="72" cy="30" r="11" fill="#E8564B"/>
+          <rect x="2" y="38" width="86" height="24" rx="5" fill="#C9A66B"/>
+        </g>
+        <!-- 見学する親子（後ろ姿） -->
+        <g transform="translate(540,104)">
+          <circle cx="18" cy="10" r="11" fill="#3B3230"/><path d="M4 26 Q18 19 32 26 L32 56 L4 56 Z" fill="#F2A65A"/>
+          <rect x="7" y="56" width="9" height="13" rx="3" fill="#3B3230"/><rect x="20" y="56" width="9" height="13" rx="3" fill="#3B3230"/>
+          <circle cx="51" cy="27" r="9.5" fill="#3B3230"/><path d="M39 41 Q51 35 63 41 L63 59 L39 59 Z" fill="#9BD0E0"/>
+          <rect x="41" y="59" width="8" height="10" rx="3" fill="#3B3230"/><rect x="53" y="59" width="8" height="10" rx="3" fill="#3B3230"/>
+          <path d="M32 37 Q40 33 40 44" stroke="#3B3230" stroke-width="3.4" fill="none" stroke-linecap="round"/>
+        </g>
+      </svg>
+      <span class="hero-eyebrow">🗓️ かわさきホリデー＆スタディ（ホリスタ）特別企画！</span>
+      <h1>まちのごはんが<span class="mk">動き出す朝</span>を、<br><span class="aqua">いっしょに<span class="nb">見にいきませんか。</span></span></h1>
+      <p class="h1sub"><span class="nb">親子でたのしむ食育見学会</span>｜<span class="nb">川崎市中央卸売市場 北部市場</span></p>
+
+      <div class="puffy-row">
+        <span class="puffy">水産・青果・関連の3棟</span>
+        <span class="puffy b2">食のあんぜん体験</span>
+        <span class="puffy b3">参加無料</span>
+      </div>
+
+      <div class="bigdate">
+        <span class="d">10<span class="w">月</span>13<span class="w">日</span></span>
+        <span class="w">（火）</span>
+      </div>
+      <div class="time-note"><span class="nb">8:00 開始</span> <span class="tn-sub">（10:00頃 終了予定）</span></div>
+      <p class="hero-note">対象：宮前区・多摩区・麻生区のPTA会員のご家庭／親子10組（応募多数の場合は抽選）</p>
+
+      <p style="margin-top:22px;"><a href="#apply" class="btn-black btn-orange">親子で参加を申し込む <span class="cv">▶</span></a></p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== アンカー ===== -->
+<section class="anchors">
+  <div class="wrap">
+    <div class="anchor-grid">
+      <a class="anchor" href="#program">当日の流れ<span class="ar">▼</span></a>
+      <a class="anchor" href="#info">開催概要・アクセス<span class="ar">▼</span></a>
+      <a class="anchor" href="#faq">よくある質問<span class="ar">▼</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ホリスタ帯 ===== -->
+<section class="holista">
+  <div class="wrap">
+    <div class="holista-in">
+      <span class="hl-badge">🗓️ 10/13は「ホリスタ」</span>
+      <span class="hl-txt">この日、川崎市立の小中学校はお休みです。</span>
+    </div>
+    <p class="hl-sub">体験的学習活動等休業日「かわさきホリデー＆スタディ」。学校をお休みして参加していただく必要はありません。</p>
+  </div>
+</section>
+
+<!-- ===== この日できること ===== -->
+<section class="section bg-mint">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="pill mint">この日、できること</span>
+      <h2>ふだんは入れない場所を、歩きます。</h2>
+      <p>テーマは「売っている場所」ではなく、食べものが流れていく姿。市場の職員のご案内で見学します。</p>
+    </div>
+    <div class="cards3">
+      <div class="card">
+        <svg class="card-illust" viewBox="0 0 92 92" role="img" aria-label="3つの棟を歩く親子">
+          <circle cx="46" cy="46" r="44" fill="#E2EFF6"/>
+          <path d="M12 46 Q25 31 38 46 L38 55 L12 55 Z" fill="#1F6F8B"/>
+          <path d="M34 42 Q47 26 60 42 L60 55 L34 55 Z" fill="#2A7E9B"/>
+          <path d="M54 46 Q65 33 76 46 L76 55 L54 55 Z" fill="#4F97AF"/>
+          <rect x="12" y="55" width="64" height="11" fill="#EFE3CE"/>
+          <g transform="translate(30,50)">
+            <circle cx="10" cy="6" r="6.5" fill="#3B3230"/><path d="M3 16 Q10 11 17 16 L17 32 L3 32 Z" fill="#F2A65A"/>
+            <circle cx="28" cy="16" r="5" fill="#3B3230"/><path d="M22 24 Q28 21 34 24 L34 34 L22 34 Z" fill="#6FA84B"/>
+          </g>
+        </svg>
+        <h3>3つの棟をあるく</h3>
+        <p>水産・青果・関連商品の3棟へ。飲食店やお魚屋さんが仕入れにくる、いちばん活気のある時間帯です。</p>
+      </div>
+      <div class="card">
+        <svg class="card-illust" viewBox="0 0 92 92" role="img" aria-label="市場を走る運搬車ターレー">
+          <circle cx="46" cy="46" r="44" fill="#FFF3DF"/>
+          <g transform="translate(15,28)">
+            <rect x="0" y="17" width="54" height="19" rx="4" fill="#EE6C1B"/>
+            <circle cx="9" cy="21" r="9.5" fill="#EE6C1B"/><rect x="4" y="2" width="9" height="17" rx="3" fill="#EE6C1B"/>
+            <rect x="23" y="6" width="27" height="11" rx="2.5" fill="#F7C948"/>
+            <circle cx="11" cy="39" r="7" fill="#22323C"/><circle cx="47" cy="39" r="7" fill="#22323C"/>
+          </g>
+          <path d="M13 74 h66" stroke="#EFE3CE" stroke-width="7" stroke-linecap="round"/>
+          <path d="M70 34 h11 M68 43 h15" stroke="#F7C948" stroke-width="3.4" stroke-linecap="round"/>
+        </svg>
+        <h3>競り場とターレーを見る</h3>
+        <p>場内を走る運搬車「ターレー」、そして競りがおこなわれる場所へ。テレビで見る市場との違いを確かめよう。</p>
+      </div>
+      <div class="card">
+        <svg class="card-illust" viewBox="0 0 92 92" role="img" aria-label="食品衛生検査所の顕微鏡と魚">
+          <circle cx="46" cy="46" r="44" fill="#E4F2E7"/>
+          <g transform="translate(27,22) scale(0.88)">
+            <rect x="12" y="0" width="9" height="21" rx="3" fill="#3F8C55" transform="rotate(14 16 10)"/>
+            <rect x="9" y="21" width="17" height="6" rx="2" fill="#3F8C55"/>
+            <path d="M6 46 Q17 35 28 46 Z" fill="#3F8C55"/>
+            <rect x="1" y="46" width="38" height="6" rx="3" fill="#2F6E42"/>
+            <rect x="15" y="27" width="4" height="13" fill="#3F8C55"/>
+          </g>
+          <g transform="translate(46,58) scale(0.82)">
+            <path d="M0 8 Q10 0 25 8 Q10 16 0 8 Z" fill="#1F6F8B"/><path d="M25 8 L33 3 L33 13 Z" fill="#14556E"/><circle cx="7" cy="7" r="1.9" fill="#fff"/>
+          </g>
+        </svg>
+        <h3>食のあんぜんを知る</h3>
+        <p>市場のなかにある食品衛生検査所へ。わたしたちの食卓がどう守られているのかを職員の方に教わります。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 3つの棟（タブ） ===== -->
+<section class="section">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="pill aqua">見学する3つの棟</span>
+      <h2>市場は、ひとつの建物ではありません。</h2>
+    </div>
+    <div class="tabs" role="tablist">
+      <button class="tab" role="tab" aria-selected="true" aria-controls="p1" id="t1">水産</button>
+      <button class="tab" role="tab" aria-selected="false" aria-controls="p2" id="t2">青果</button>
+      <button class="tab" role="tab" aria-selected="false" aria-controls="p3" id="t3">関連商品</button>
+    </div>
+    <div class="tabpanels">
+      <div class="tabpanel" role="tabpanel" id="p1" aria-labelledby="t1">
+        <div class="tp-in">
+          <svg class="tab-illust" viewBox="0 0 132 99" role="img" aria-label="発泡スチロールの箱に並ぶ魚">
+            <rect x="8" y="35" width="116" height="48" rx="7" fill="#E2EFF6"/>
+            <rect x="8" y="27" width="116" height="16" rx="6" fill="#fff"/>
+            <g transform="translate(20,41)"><path d="M0 14 Q18 -2 47 14 Q18 30 0 14 Z" fill="#1F6F8B"/><path d="M47 14 L61 5 L61 23 Z" fill="#14556E"/><circle cx="13" cy="11" r="2.8" fill="#fff"/></g>
+            <g transform="translate(58,56)"><path d="M0 11 Q14 -1 36 11 Q14 23 0 11 Z" fill="#4F97AF"/><path d="M36 11 L47 4 L47 18 Z" fill="#2A7E9B"/><circle cx="10" cy="9" r="2.2" fill="#fff"/></g>
+            <path d="M14 88 h104" stroke="#EFE3CE" stroke-width="7" stroke-linecap="round"/>
+          </svg>
+          <div>
+            <span class="tag">いちばん朝が早い</span>
+            <h3>魚が、日本中から集まる棟</h3>
+            <p>全国の港から届いた魚が、仲卸のお店にずらりと並びます。「この魚はどこから来たの？」「何時に届いたの？」——お店の方に聞いてみたくなる場所です。競りがおこなわれるのもこの棟。8時半をすぎると店じまいがはじまります。</p>
+          </div>
+        </div>
+      </div>
+      <div class="tabpanel" role="tabpanel" id="p2" aria-labelledby="t2" hidden>
+        <div class="tp-in">
+          <svg class="tab-illust" viewBox="0 0 132 99" role="img" aria-label="段ボール箱に積まれた野菜と果物">
+            <rect x="16" y="42" width="100" height="44" rx="5" fill="#C9A66B"/>
+            <rect x="16" y="42" width="100" height="10" fill="#B08F55"/>
+            <circle cx="45" cy="31" r="15" fill="#6FA84B"/><circle cx="45" cy="31" r="9" fill="#8CC46A"/>
+            <circle cx="79" cy="35" r="12" fill="#E8564B"/><path d="M79 23 q3 -5 8 -4" stroke="#3F8C55" stroke-width="3" fill="none" stroke-linecap="round"/>
+            <path d="M99 22 L104 46 L109 22 Z" fill="#EE6C1B"/><path d="M102 17 L104 24 L107 17" stroke="#6FA84B" stroke-width="3" fill="none" stroke-linecap="round"/>
+            <path d="M22 92 h88" stroke="#EFE3CE" stroke-width="7" stroke-linecap="round"/>
+          </svg>
+          <div>
+            <span class="tag">いろどりがすごい</span>
+            <h3>野菜と果物が積み上がる棟</h3>
+            <p>段ボールに詰められた野菜や果物が、山のように積まれています。スーパーで見るのは1個ずつですが、ここでは箱の単位。「いつも食べているあの野菜が、こんな形で運ばれてくるんだ」と気づける場所です。</p>
+          </div>
+        </div>
+      </div>
+      <div class="tabpanel" role="tabpanel" id="p3" aria-labelledby="t3" hidden>
+        <div class="tp-in">
+          <svg class="tab-illust" viewBox="0 0 132 99" role="img" aria-label="包丁や乾物など関連商品">
+            <rect x="10" y="31" width="112" height="54" rx="6" fill="#FDECE2"/>
+            <g transform="translate(22,39)"><path d="M0 18 L39 6 L41 15 L4 27 Z" fill="#B9C4CB"/><rect x="39" y="5" width="19" height="8" rx="3" fill="#6B4F35" transform="rotate(-17 39 5)"/></g>
+            <g transform="translate(76,41)"><path d="M0 8 q11 -8 23 0 l0 27 q-12 5 -23 0 Z" fill="#C4562A"/><rect x="6" y="1" width="11" height="8" rx="2" fill="#8C3C1E"/></g>
+            <circle cx="47" cy="68" r="8.5" fill="#F7C948"/><circle cx="62" cy="70" r="6.5" fill="#E2C08A"/>
+            <path d="M18 91 h96" stroke="#EFE3CE" stroke-width="7" stroke-linecap="round"/>
+          </svg>
+          <div>
+            <span class="tag">大人がいちばん驚く</span>
+            <h3>包丁も乾物も、ここにある棟</h3>
+            <p>魚や野菜だけではありません。包丁、乾物、調味料、お店で使う道具まで——食にまつわるものが集まる棟です。飲食店の方がここで仕入れをそろえていく様子が見られます。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 市場のひみつ（数字） ===== -->
+<section class="section bg-peach">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="pill cream">市場のひみつ</span>
+      <h2>たぶん、大人のほうが驚きます。</h2>
+      <p>「市場といえば競り」というイメージ、じつはほんの一部です。当日はこんな話も聞けます。</p>
+    </div>
+    <div class="nums">
+      <div class="num-card">
+        <div class="n">1<small>%</small></div>
+        <h3>競りは、全体のわずか</h3>
+        <p>水産で競りにかけられるのは全体の1%ほど。ほとんどは事前に決まった相対取引で動いています。お花は逆に、半分以上が競りにかけられます。</p>
+      </div>
+      <div class="num-card">
+        <div class="n">指</div>
+        <h3>川崎は、いまも手で競る</h3>
+        <p>デジタル化がすすむなか、北部市場ではいまも指で値を示す「指競り」がおこなわれています。全国的にかなり貴重な光景です。</p>
+      </div>
+      <div class="num-card">
+        <div class="n">8<small>:30</small></div>
+        <h3>市場の一日は、朝に終わる</h3>
+        <p>8時半をすぎると店じまいがはじまり、10時にはほとんど人がいません。だから集合は朝8時です。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 当日の流れ ===== -->
+<section class="section" id="program">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="pill aqua">当日の流れ</span>
+      <h2>8:00 開始、10:00頃 解散。</h2>
+      <p>集合場所は管理事務所棟1階ロビーです。市場の朝は早いので、時間厳守でお願いします。</p>
+    </div>
+    <div class="tl">
+      <div class="tl-item">
+        <div class="tl-time">8:00</div>
+        <div class="tl-body">
+          <h3>集合・受付</h3>
+          <p>管理事務所棟1階ロビーにお集まりください。場内は関係者の車両が動いています。到着後は駐車場や通路にとどまらず、まっすぐロビーへお願いします。</p>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-time">8:05<br>-8:15</div>
+        <div class="tl-body">
+          <h3>概要説明</h3>
+          <p>管理事務所棟3階・第1会議室で、北部市場のしくみとこの日の歩き方を10分でご説明します。</p>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-time">8:15<br>-9:15</div>
+        <div class="tl-body">
+          <h3>市場見学（60分）</h3>
+          <p>水産・青果・関連商品の3棟を歩いてまわります。仕入れのやりとり、行き交うターレー、競り場——市場がいちばん動いている時間です。</p>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-time">9:15<br>-9:20</div>
+        <div class="tl-body">
+          <h3>休憩</h3>
+          <p>管理事務所棟にもどって、ひと息。お手洗いもこちらで。</p>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-time">9:20<br>-10:00</div>
+        <div class="tl-body">
+          <h3>食品衛生検査所の見学・説明（40分）</h3>
+          <p>管理事務所棟2階の食品衛生検査所へ。市場に入ってくる食べものの安全を、だれが、どうやって確かめているのか。職員の方から直接うかがいます。<br><small>※体験プログラムの内容は、当日の検査業務の状況により変わることがあります。</small></p>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-time">10:00<br>ごろ</div>
+        <div class="tl-body">
+          <h3>終了・解散</h3>
+          <p>おつかれさまでした。お買い物をご希望の方は、集合前の時間に少し早めにお越しください（詳しくはよくある質問へ）。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 開催概要 ===== -->
+<section class="section bg-mint" id="info">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="pill mint">開催概要</span>
+      <h2>お申し込みの前に。</h2>
+    </div>
+    <div class="info">
+      <div class="info-row"><div class="lb">📅 日時</div><div class="vl"><strong>2026年10月13日（火）8:00 開始</strong><br><strong style="font-size:15px;">10:00頃 終了予定</strong><br><small style="color:var(--ink-soft);">集合：8:00／管理事務所棟1階ロビー<br>この日は川崎市立小中学校の一斉休業日「ホリスタ」です</small></div></div>
+      <div class="info-row"><div class="lb">📍 会場</div><div class="vl">川崎市中央卸売市場 北部市場<br><small style="color:var(--ink-soft);">川崎市宮前区水沢1-1-1</small></div></div>
+      <div class="info-row"><div class="lb">👨‍👩‍👧 対象</div><div class="vl">宮前区・多摩区・麻生区のPTA会員のご家庭<br><small style="color:var(--ink-soft);">お子さん（小学生）と保護者のペアでご参加ください</small></div></div>
+      <div class="info-row"><div class="lb">🎫 定員</div><div class="vl"><strong>親子10組</strong><br><small style="color:var(--ink-soft);">応募多数の場合は抽選とさせていただきます</small></div></div>
+      <!-- 【要確定】申込締切日 -->
+      <div class="info-row"><div class="lb">✉️ 申込締切</div><div class="vl"><strong>2026年9月25日（金）</strong></div></div>
+      <div class="info-row"><div class="lb">💰 参加費</div><div class="vl"><span class="free">無料</span></div></div>
+      <div class="info-row"><div class="lb">🏫 主催</div><div class="vl">宮前区PTA協議会・多摩区PTA協議会・麻生区PTA協議会／川崎市PTA連絡協議会</div></div>
+      <div class="info-row"><div class="lb">🤝 協力</div><div class="vl">川崎市中央卸売市場北部市場</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== アクセス ===== -->
+<section class="section">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="pill aqua">アクセス</span>
+      <h2>川崎市宮前区水沢1-1-1</h2>
+      <p>最寄り駅からはバスをご利用ください。</p>
+    </div>
+    <div class="map-ph">
+      <!-- 【要差し替え】アクセス地図の画像を assets/map.png として配置してください -->
+      <img src="assets/map.png" alt="北部市場へのアクセス地図" onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+      <div style="display:none;">🗺️<br>アクセス地図<br><span style="font-weight:500;font-size:13px;">（当日ご案内する地図をここに掲載します）</span></div>
+    </div>
+    <ul class="bus">
+      <li><b>小田急線 向ヶ丘遊園駅</b>から 小田急バス（あざみ野駅行）<span class="stop">南水沢 下車</span></li>
+      <li><b>東急田園都市線 あざみ野駅</b>から 小田急バス（向ヶ丘遊園行）<span class="stop">南水沢 下車</span></li>
+      <li><b>東急田園都市線 たまプラーザ駅</b>から 東急バス（虹ヶ丘営業所行）<span class="stop">平津三叉路 下車</span></li>
+      <li><b>JR南武線・東急田園都市線 溝の口駅</b>から 川崎市営バス（聖マリアンナ医科大学行）<span class="stop">清水台 下車</span></li>
+    </ul>
+    <div class="carnote">
+      <b>🚗 お車でお越しの方へ</b><br>
+      市場の駐車場は台数に限りがあり、業務用の車両が優先です。可能なかぎり公共交通機関、または参加される方どうしでの乗り合わせにご協力ください。お申し込みフォームで、お車の利用予定をおうかがいします。
+    </div>
+  </div>
+</section>
+
+<!-- ===== おねがい ===== -->
+<section class="section bg-cream">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="pill cream">参加にあたってのおねがい</span>
+      <h2>市場は、プロが働いている職場です。</h2>
+    </div>
+    <div class="rules">
+      <div class="rule">
+        <span class="ic">🛻</span>
+        <div><h3>場内では車両が走っています</h3><p>ターレーやフォークリフトが行き交います。お子さんから目を離さず、必ず保護者の方と一緒に行動してください。</p></div>
+      </div>
+      <div class="rule">
+        <span class="ic">👟</span>
+        <div><h3>歩きやすく、汚れてもよい服装で</h3><p>床が濡れている場所があります。サンダルやヒールは避け、スニーカーでお越しください。</p></div>
+      </div>
+      <div class="rule">
+        <span class="ic">🧥</span>
+        <div><h3>朝は冷えます</h3><p>10月の朝8時、しかも場内は冷やされているエリアがあります。羽織るものを1枚ご用意ください。</p></div>
+      </div>
+      <div class="rule">
+        <span class="ic">🤫</span>
+        <div><h3>仕入れの邪魔にならないように</h3><p>走らない・商品にさわらない・通路をふさがない。案内する職員の指示に従ってください。</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FAQ ===== -->
+<section class="section" id="faq">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="pill aqua">よくある質問</span>
+      <h2>気になることは、ここで。</h2>
+    </div>
+    <div class="faq">
+      <details>
+        <summary><span class="q">Q.</span>朝8時集合ですが、学校はどうなりますか？</summary>
+        <div class="a">10月13日（火）は、川崎市立の小中学校が一斉にお休みになる日（体験的学習活動等休業日「かわさきホリデー＆スタディ」＝通称ホリスタ）です。学校をお休みして参加していただく必要はありません。</div>
+      </details>
+      <details>
+        <summary><span class="q">Q.</span>その場で買い物はできますか？</summary>
+        <div class="a">見学プログラム中はお買い物の時間を設けていませんが、<strong>見学の前後であればお買い物いただけます</strong>。北部市場は平日、飲食店や小売店などプロの買い出し人の方に向けて営業していますが、一般の方でも買い出しの落ち着く8時ごろからは見て回りやすい時間帯です。ただし8時半をすぎると店じまいをはじめるお店が増えますので、お買い物をご希望の方は<strong>集合前の時間に少し早めにお越しいただく</strong>のがおすすめです。営業時間はお店によって異なります。</div>
+      </details>
+      <details>
+        <summary><span class="q">Q.</span>子どもだけで参加できますか？</summary>
+        <div class="a">できません。市場は業務用の車両が走る場所ですので、必ず保護者の方がご同伴ください。お子さんと保護者のペアで1組としてお申し込みいただきます。</div>
+      </details>
+      <details>
+        <summary><span class="q">Q.</span>兄弟姉妹も一緒に参加できますか？</summary>
+        <div class="a">ご参加いただけます。お申し込みフォームに、参加されるお子さんの人数と学年をご記入ください。応募状況によっては、人数を調整させていただく場合があります。</div>
+      </details>
+      <details>
+        <summary><span class="q">Q.</span>雨のときはどうなりますか？</summary>
+        <div class="a">屋内での見学が中心のため、小雨でも実施します。荒天など安全がおびやかされる場合は、前日までに中止のご連絡をいたします。</div>
+      </details>
+      <details>
+        <summary><span class="q">Q.</span>写真撮影はできますか？</summary>
+        <div class="a">お店や商品の撮影は、案内する職員の指示に従ってください。当日は記録のため主催側でも写真を撮影します。広報物・PTA便り等への掲載可否は、お申し込み時に保護者の方の同意を確認します。</div>
+      </details>
+      <details>
+        <summary><span class="q">Q.</span>キャンセルはできますか？</summary>
+        <div class="a">お申し込み後にご都合が悪くなった場合は、できるだけ早めにご連絡ください。定員が限られているため、キャンセル待ちの方へお声がけいたします。</div>
+      </details>
+      <details>
+        <summary><span class="q">Q.</span>PTA会員でなくても参加できますか？</summary>
+        <div class="a">今回は宮前区・多摩区・麻生区のPTA会員のご家庭を対象とした企画です。ご不明な場合は、各校のPTA役員またはお申し込みフォームからお問い合わせください。</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 最終CTA ===== -->
+<section class="section final" id="apply">
+  <div class="wrap">
+    <h2>学校がお休みの日に、<br>朝8時の市場へ。</h2>
+    <p>宮前区・多摩区・麻生区のPTA会員のご家庭／参加無料／親子10組（応募多数の場合は抽選）<br><strong>申込締切：2026年9月25日（金）</strong></p>
+    <!-- 【要差し替え】Googleフォームの公開URL（https://forms.gle/～） -->
+    <p><a href="#" class="btn-black btn-orange">お申し込みフォーム <span class="cv">▶</span></a></p>
+    <p style="font-size:13px;margin-top:14px;">お申し込みフォームでは、参加人数・お車の利用予定・写真掲載のご希望をあわせてうかがいます。</p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="fb">北部市場 親子見学会</div>
+    <p>川崎市中央卸売市場北部市場のご協力による、親子の食育見学会です。スーパーに並ぶ前の食べものが、どこを通ってわたしたちの食卓に届くのか。本物の現場で確かめる朝の2時間です。</p>
+    <p class="fo">
+      主催：宮前区PTA協議会／多摩区PTA協議会／麻生区PTA協議会／川崎市PTA連絡協議会<br>
+      協力：川崎市中央卸売市場北部市場
+    </p>
+  </div>
+</footer>
+
+<script>
+  // タブ切り替え
+  const tabs = document.querySelectorAll('.tab');
+  tabs.forEach(tab=>{
+    tab.addEventListener('click', ()=>{
+      tabs.forEach(t=>{
+        const panel = document.getElementById(t.getAttribute('aria-controls'));
+        const on = (t === tab);
+        t.setAttribute('aria-selected', on ? 'true' : 'false');
+        panel.hidden = !on;
+      });
+    });
+  });
+</script>
+</body>
+</html>
